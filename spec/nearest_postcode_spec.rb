@@ -1,7 +1,7 @@
 require 'spec_helper'
 require_relative '../lib/postcode_services.rb'
 
-describe 'testing searching by nearest postcpde functionality' do
+describe 'testing searching by nearest postcode functionality' do
 
   before(:all) do
     postcodes = Postcodes.new

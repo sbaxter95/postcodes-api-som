@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Postcodes API</title>
+    </head>
+    <body>
+        <h1>Postcodes API</h1>
+        <% @api = Postcodes.new %>
+        <% @api.single_postcode.get_single_postcode('sw166rw')['result'].each do |key, value| %>
+            <p> <%= "#{key} = #{value}" %> </p>
+        <% end %>
+    </body>
+</html>
